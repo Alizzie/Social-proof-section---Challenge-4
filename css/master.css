@@ -1,0 +1,264 @@
+/*
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700 */
+
+
+body {
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  background-image: url(../images/bg-pattern-bottom-desktop.svg);
+  font-family: 'Spartan', sans-serif;
+  font-size: 1rem;
+}
+
+p {
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 8%;
+}
+
+                  /* First Half */
+
+.FirstHalf {
+  display: flex;
+  justify-content: space-between;
+}
+
+                /* Heading Section */
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.Heading {
+  width: 40%;
+}
+
+                    /* Ratings Section */
+
+
+.RatingBox {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 20px;
+  margin-bottom: 20px;
+}
+
+.Box1 {
+  margin-right: 100px;
+}
+
+.Box2 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.Box3 {
+  margin-left: 100px;
+}
+
+.RatingBox img {
+  margin: 5px;
+}
+
+.RatingBox h4 {
+  margin-left: 25px;
+  color: hsl(300, 43%, 22%);
+  font-size: 500;
+}
+
+                         /* Seecond Half */
+
+                            /* Review */
+
+.Reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.ReviewBox {
+  background-color: hsl(300, 43%, 22%);
+  width: 25%;
+  border-radius: 10px;
+  padding: 4% 3% ;
+}
+
+.ReviewBox img {
+  border-radius: 50%;
+  width: 20%;
+  margin-right: 1.5rem;
+}
+
+.personData {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.personName h4 {
+  color: #fff;
+  margin: 4% 0 0;
+  font-weight: 700;
+}
+
+.personName p {
+  color: hsl(333, 80%, 67%);
+  margin: 2% 0 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.reviewText p {
+  color: hsl(300, 24%, 96%);
+  margin: 0;
+  font-size: 0.83rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.Review1 {
+  margin-bottom: 50px;
+}
+
+.Review2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.Review3 {
+  margin-top: 50px;
+}
+
+                           /* Footer */
+
+.attribution {
+  margin-top: 5%;
+}
+
+                        /* Media Query */
+
+@media screen and (max-width : 950px) {
+
+  body {
+    background-image: url(../images/bg-patern-top-mobile.svg);
+    background-image: url(../images/bg-pattern-bottom-mobile.svg);
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 0.81rem;
+    margin-top: 10%;
+    line-height: 1.7;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15%;
+  }
+
+  .FirstHalf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Heading {
+    width: 100%;
+  }
+
+  .Ratings {
+    width: 100%;
+    margin-top: 8%;
+  }
+
+  .RatingBox {
+    display: block;
+    margin: 5% 0 5%;
+    padding: 15px 20px;
+  }
+
+  .RatingBox h4 {
+    margin: 3% 0 3%;
+    font-size: 0.8rem;
+  }
+
+  .SecondHalf {
+    width: 100%;
+  }
+
+  .Reviews {
+    display: block;
+    margin-top: 15%;
+  }
+
+  .ReviewBox {
+    width: 100%;
+    text-align: left;
+    padding: 40px 0;
+  }
+
+  .personData {
+    margin: 0 30px 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .personName h4 {
+    font-size: 0.8rem;
+  }
+
+  .personName p {
+    font-size: 0.8rem;
+  }
+
+  .reviewText {
+    margin: 0 30px;
+  }
+
+  .reviewText p{
+    line-height: 1.8;
+    font-size: 0.75rem;
+
+}
+
+  .ReviewBox img {
+    width: 20%;
+  }
+
+}
